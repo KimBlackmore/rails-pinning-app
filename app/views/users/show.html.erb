@@ -1,0 +1,32 @@
+<div class="header">
+	<h1>Your account details</h1>
+</div>
+
+
+
+<p id="notice"><%= notice %></p>
+
+<div class="well">
+	<p>
+	  <strong>First name:</strong>
+	  <%= @user.first_name %>
+	</p>
+
+	<p>
+	  <strong>Last name:</strong>
+	  <%= @user.last_name %>
+	</p>
+
+	<p>
+	  <strong>Email:</strong>
+	  <%= @user.email %>
+	</p>
+
+	<p>
+	  <strong>Password:</strong>
+	  <%= @user.password %>
+	</p>
+</div>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

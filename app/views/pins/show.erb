@@ -1,0 +1,26 @@
+<div class="header">
+  <h1>
+    <%= "#{@pin.title}" %>
+    <i class="fa fa-laptop" aria-hidden="true"></i>
+  </h1>
+</div>
+
+<div class="show-pin">
+  <p><%= "#{@pin.text}" %></p>
+
+  <hr/>
+  <p>
+    <b>Visit <%= "#{@pin.title}" %> at: </b>
+    <a class="url" href="<%= "#{@pin.url}" %>" target="_blank">
+      <%= "#{@pin.url}" %>
+    </a>
+  </p>
+
+    <img src="<%= @pin.image.url(:medium) %>">
+
+</div>
+<br/>
+<a href="/">
+  <i class="fa fa-home" aria-hidden="true"></i>
+  Back to Home
+</a>
